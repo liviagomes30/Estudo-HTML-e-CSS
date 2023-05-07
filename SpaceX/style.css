@@ -1,0 +1,40 @@
+.logo {
+    max-width:200px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+    object-fit: fill; /*  object-fit que define como um objeto deve se comportar perante um elemento com dimensões definidas. fill, preenche todo o elemento com o conteúdo da imagem, mantendo as dimensões definidas para o elemento, não a proporção da imagem; */
+  }
+
+ table, th, td {
+    border: 2px solid black;
+  }
+
+  * {
+    font-family: Arial;
+  }
+
+.nav {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5px;
+  }
+
+img {
+    max-width:400px;
+    max-height:300px;
+    width: auto;
+    height: auto;
+}
+
+.hire {
+    padding-bottom: 10px;
+}
+
+.spaceships{
+    padding-bottom: 10px;
+}
+
+h1 {
+    padding: 5px;
+}

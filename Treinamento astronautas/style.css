@@ -1,0 +1,19 @@
+* {
+    background-color: #0d075e;
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+}
+
+#days-of-week h2 {
+    color: yellow;
+}
+
+#activities h2 {
+    background-color: yellow;
+    color: black;
+    border: 2px solid black;
+}
+
+#astronomy-class {
+    color: red;
+}

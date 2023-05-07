@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceX</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <span class="nav"><a href="index.html"><img class="logo" src="logo.png"></a></span>
+            <span class="nav"><a href="spaceships.html">The Spaceships</a></span>
+            <span class="nav"><a href="hireus.html">Hire US</a></span>
+        </nav>
+        <hr>
+    </header>
+    <section>
+        <h1>Hire Us Now</h1>
+        <p>Leave a message to request one of our services and we will get back to you as soon possible.</p>
+    </section>
+    
+    <section>
+        <form>
+
+            <div class="hire">
+                <label for="nome">Nome:</label> <!-- O atributo for faz um tipo de link entre a label e o input. Logo o for tem que apontar para o ID do input. -->
+                <input type="text" id="nome" />
+                <label for="email">Email:</label>
+                <input type="email" id="email" />
+            </div>
+
+            <div class="hire">
+                <label for="spaceship">Spaceship:</label>
+                <select id ="spaceship" name="spacesh ip" required="required">
+                    <option value="falcon9">Falcon 9</option>
+                    <option value="falcon_heavy">Falcon Heavy</option>
+                    <option value="nsw">Nintendo Switch</option>
+                    <option value="pcg">PC Gaming</option>
+                </select>
+                <label for="service">Type of Service:</label>
+                <input type="search" id="service" name="service" /> <!-- search: exibi a lista de sugestões com as últimas buscas-->
+                <datalist id="service">
+                    <option value="1 Nam quis nulla. Integer malesuada"></option>
+                    <option value="2 Nam quis nulla. Integer malesuada"></option>
+                    <option value="3 Nam quis nulla. Integer malesuada"></option>
+                    <option value="4 Nam quis nulla. Integer malesuada"></option>
+                </datalist>
+            </div>
+
+            <div class="hire">
+                <button type="submit">Send Message</button>
+            </div>
+
+        </form>
+    </section>
+    
+    
+</body>
+</html>
