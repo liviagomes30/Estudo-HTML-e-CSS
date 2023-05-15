@@ -1,8 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: sans-serif;
   color: #444;
 
   border-top: 10px solid #1098ad;
+}
+
+.main-header {
+  background-color: #f4f4f4;
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  height: 80px; /* a altura final é 120: 80+20+20 */
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+aside {
+  background-color: #f4f4f4;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 50px 0;
+  width: 500px;
+}
+
+nav {
+  font-size: 18px;
 }
 
 h1,
@@ -19,10 +56,13 @@ h1 {
 
 h2 {
   font-size: 40px;
+  margin-bottom: 30px;
 }
 
 h3 {
   font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 h4 {
@@ -34,10 +74,22 @@ h4 {
 p {
   font-size: 22px;
   line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
 }
 
 li {
   font-size: 20px;
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  margin-bottom: 0;
 }
 
 /* footer p {
@@ -64,16 +116,6 @@ li {
 .related-author {
   font-size: 18px;
   font-weight: bold;
-}
-
-.main-header {
-  background-color: #f4f4f4;
-}
-
-aside {
-  background-color: #f4f4f4;
-  border-top: 5px solid #1098ad;
-  border-bottom: 5px solid #1098ad;
 }
 
 /* li:first-child {
@@ -110,6 +152,7 @@ a:active {
   font-style: italic;
 }
 
-nav {
-  font-size: 18px;
+.post-img {
+  width: 100%; /* em relação ao header */
+  height: auto;
 }
