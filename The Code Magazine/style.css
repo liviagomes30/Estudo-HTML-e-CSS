@@ -3,11 +3,13 @@
   padding: 0;
 }
 
+/* PAGE SECTIONS */
 body {
   font-family: sans-serif;
   color: #444;
 
   border-top: 10px solid #1098ad;
+  position: relative;
 }
 
 .main-header {
@@ -42,6 +44,7 @@ nav {
   font-size: 18px;
 }
 
+/* SMELLER ELEMENTS */
 h1,
 h2,
 h3 {
@@ -155,4 +158,45 @@ a:active {
 .post-img {
   width: 100%; /* em relação ao header */
   height: auto;
+}
+
+nav a:link {
+  display: inline-block;
+  margin-right: 30px;
+  margin-top: 10px;
+}
+
+nav a:link:last-child {
+  margin-right: 0px;
+}
+
+button {
+  cursor: pointer;
+  font-size: 20px;
+  padding: 15px;
+  position: absolute;
+  right: 50px;
+  bottom: 30px;
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+h2 {
+  position: relative;
+}
+
+h2::after {
+  content: "TOP";
+  background-color: #ffe70e;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -10px;
+  right: -25px;
 }
