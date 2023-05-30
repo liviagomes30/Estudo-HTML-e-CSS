@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* PAGE SECTIONS */
@@ -16,7 +17,7 @@ body {
   background-color: #f4f4f4;
   padding: 20px 40px;
   margin-bottom: 60px;
-  height: 80px; /* a altura final é 120: 80+20+20 */
+  /* height: 80px; a altura final é 120: 80+20+20 */
 }
 
 .post-header {
@@ -24,7 +25,7 @@ body {
 }
 
 .container {
-  width: 800px;
+  width: 1200px;
   margin: 0 auto;
 }
 
@@ -36,8 +37,7 @@ aside {
   background-color: #f4f4f4;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
-  padding: 50px 0;
-  width: 500px;
+  padding: 50px 40px;
 }
 
 nav {
@@ -72,6 +72,7 @@ h4 {
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 p {
@@ -199,4 +200,49 @@ h2::after {
   position: absolute;
   top: -10px;
   right: -25px;
+}
+
+/* FLOAT */
+
+.author {
+  float: left;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.author-img {
+  float: left;
+  margin-bottom: 20px;
+}
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+article {
+  float: left;
+  width: 825px;
+}
+
+aside {
+  float: right;
+  width: 300px;
+}
+
+footer {
+  clear: both;
 }
