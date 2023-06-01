@@ -42,7 +42,6 @@ article::before {
 
 .price {
   font-size: 24px;
-  float: left;
 }
 
 .shipping {
@@ -51,7 +50,6 @@ article::before {
   font-weight: bold;
   color: #777;
   margin-top: 8px;
-  float: right;
 }
 
 .more-info:link,
@@ -66,13 +64,20 @@ article::before {
   text-decoration: none;
 }
 
+.product-colors {
+  display: flex;
+  gap: 10px;
+}
+
 .color {
-  background-color: black;
+  display: inline-block;
   height: 25px;
   width: 25px;
-  display: inline-block;
-  margin-right: 10px;
   cursor: pointer;
+}
+
+.color-black {
+  background-color: black;
 }
 
 .color-blue {
@@ -96,8 +101,7 @@ article::before {
 .details-title {
   text-transform: uppercase;
   font-size: 16px;
-  margin-bottom: 15px;
-  margin-top: 15px;
+  margin: 20px 0;
 }
 
 .details-list {
@@ -128,6 +132,7 @@ article::before {
 
 /* FLOAT */
 
+/*
 .container-img {
   float: left;
   height: 250px;
@@ -144,11 +149,38 @@ article::before {
 .container-details {
   float: left;
   /* (825 - 8 (2 bodas de 4) - 250 (imagem) - 80 (2 espaçamentos de 40 entre divs) )/ 2 */
-  width: 243px;
+/* width: 243px;
   margin-top: 20px;
 }
 
 .text-info {
   clear: both;
   margin-bottom: 10px;
+} */
+
+/* FLEXBOX */
+
+.container {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.container-info {
+  flex: 1;
+}
+
+.container-details {
+  flex: 1;
+}
+
+.container-img {
+  height: 250px;
+}
+
+.price-shipping {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
 }
