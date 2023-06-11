@@ -16,7 +16,7 @@ body {
 .main-header {
   background-color: #f4f4f4;
   padding: 20px 40px;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
   /* height: 80px; a altura final é 120: 80+20+20 */
 }
 
@@ -30,7 +30,7 @@ body {
 }
 
 article {
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
 }
 
 aside {
@@ -246,8 +246,6 @@ footer {
   clear: both;
 } */
 
-/* Flexbox */
-
 .main-header {
   display: flex;
   align-items: center;
@@ -287,18 +285,39 @@ footer {
   font-style: italic;
 }
 
-.row {
+/* Flexbox Layout */
+
+/* .row {
   display: flex;
   align-items: flex-start;
   gap: 75px;
   margin-bottom: 60px;
-}
+} */
 
-article {
+/* article {
   flex: 1;
-  margin-bottom: 0;
+  /* flex:1; = flex:1 1 0n; (where n is a length unit). */
+/* margin-bottom: 0;
+} */
+
+/* aside {
+  flex: 0 0 300px;
+} */
+
+/* CSS GRID LAYOUT */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 75px;
+  row-gap: 60px;
+  align-items: start;
 }
 
-aside {
-  flex: 0 0 300px;
+.main-header {
+  grid-column: 1/ -1;
+}
+
+footer {
+  grid-column: 1 / -1;
 }
